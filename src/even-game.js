@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
 export default () => {
   console.log('Answer "yes" if number even otherwise answer "no".');
   const name = readlineSync.question('May I have your name?: ');
@@ -19,12 +21,8 @@ export default () => {
       return;
     }
     console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".
-Let\'s try again, ${name}`)
+Let's try again, ${name}`);
   };
 
   play(0);
-};
-
- const getRandomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min)) + min;
 };
