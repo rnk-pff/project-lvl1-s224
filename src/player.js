@@ -16,7 +16,7 @@ export default (rules, getQuestionAndAnswer) => {
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     const correctAnswer = cdr(pair);
-    if (correctAnswer === answer) {
+    if (String(correctAnswer) === answer) {
       console.log('Correct!');
       play(tryNumber + 1);
       return;

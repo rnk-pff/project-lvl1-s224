@@ -1,6 +1,5 @@
 import { cons } from 'hexlet-pairs';
-
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import getRandomInt from '../random-int';
 
 export const rules = 'Answer "yes" if number even otherwise answer "no".';
 
