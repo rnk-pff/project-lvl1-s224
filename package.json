@@ -26,6 +26,7 @@
     "brain-even": "dist/bin/brain-even.js"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.5",
     "readline-sync": "^1.4.8"
   },
   "description": "",

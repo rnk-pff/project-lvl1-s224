@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-import evenGame from '../even-game';
+import { rules, getQuestionAndAnswer } from '../games/even-game';
+import player from '../player';
 
-console.log('Welcome to the Brain Games!');
-
-evenGame();
+player(rules, getQuestionAndAnswer);

@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from 'hexlet-pairs';
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
-export default () => {
-  console.log('Answer "yes" if number even otherwise answer "no".');
+export default (rules, getQuestionAndAnswer) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(rules);
   const name = readlineSync.question('May I have your name?: ');
 
   const play = (tryNumber) => {
@@ -11,10 +11,11 @@ export default () => {
       console.log(`Congratulations, ${name}!`);
       return;
     }
-    const number = getRandomInt(1, 100);
-    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-    console.log(`Question: ${number}`);
+    const pair = getQuestionAndAnswer();
+    const question = car(pair);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
+    const correctAnswer = cdr(pair);
     if (correctAnswer === answer) {
       console.log('Correct!');
       play(tryNumber + 1);
