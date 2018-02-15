@@ -21,7 +21,7 @@ export default () => {
       return;
     }
     console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".
-Let's try again, ${name}`);
+Let's try again, ${name}!`);
   };
 
   play(0);
