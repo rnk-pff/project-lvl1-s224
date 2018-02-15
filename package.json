@@ -1,6 +1,6 @@
 {
   "name": "brain-games-rnk",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +23,8 @@
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "dependencies": {
     "hexlet-pairs": "^1.0.5",
