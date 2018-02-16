@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { rules, getQuestionAndAnswer } from '../games/gcd-game';
-import player from '../player';
+import brainGcd from '../games/gcd-game';
 
-player(rules, getQuestionAndAnswer);
+brainGcd();
